@@ -44,6 +44,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 #mode_icon{
@@ -55,6 +60,10 @@ body {
   font-size: 1.6rem;
   position: absolute;
   top: 0;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 
