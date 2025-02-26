@@ -13,7 +13,7 @@
   --sun-color: #2e2f38;
 }
 
-.theme{
+.theme {
   --background-body: #17171c;
   --background-color: #f1f2f3;
   --button-color-operator: #4b5efc;
@@ -27,7 +27,6 @@
   --text-color: #000000;
   --sun-color: #636574;
 }
-
 
 * {
   margin: 0;
@@ -51,7 +50,7 @@ body {
   -o-transition: all 0.3s linear;
 }
 
-#mode_icon{
+#mode-icon {
   color: var(--sun-color);
   width: 53px;
   height: 52px;
@@ -61,11 +60,10 @@ body {
   position: absolute;
   top: 0;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
-
 
 section {
   border-radius: 42px;
@@ -78,16 +76,14 @@ section {
   gap: 1rem;
 }
 
-.output_div{
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 400px;
-    height: 100px; 
- 
+.output-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 400px;
+  height: 100px;
 }
-.all_buttons {
+.all-buttons {
   height: 500px;
   width: 450px;
   padding: 1.5rem;
@@ -114,21 +110,23 @@ button {
   }
 }
 
-#modulus{
+#modulus {
   background-color: var(--button-color-operator);
   &:hover {
     background-color: var(--button-color-operator-hover);
   }
 }
 
-#clear{
+#clear {
   background-color: var(--button-color-clear);
   &:hover {
     background-color: var(--button-color-clear-hover);
   }
 }
 
-#multiply,#divide,#minus,
+#multiply,
+#divide,
+#minus,
 #plus {
   background-color: var(--button-color-operator);
   font-size: 2rem;
@@ -146,39 +144,36 @@ button {
   }
 }
 
+/** Media Query */
+
 @media (width <= 768px) {
-
-  .output_div{
-
+  .output-div {
     width: 300px;
-    height: 80px; 
- 
-}
-.all_buttons {
-  height: 350px;
-  width: 350px;
-  padding: 2.2rem;
-
-}
-p {
-  padding-inline: 0.8rem;
-  font-size: 2rem;
-}
-button {
-  width: 60px;
-  height: 60px;
-  margin: 0.2rem;
-  font-size: 1.4rem;
-
-}
-#multiply,#divide,#minus,
-#plus {
-  font-size: 1.4rem;
-
-}
-#equal {
-  font-size: 1.4rem;
-  width: 130px;
-
-}
+    height: 80px;
+  }
+  .all-buttons {
+    height: 350px;
+    width: 350px;
+    padding: 2.2rem;
+  }
+  p {
+    padding-inline: 0.8rem;
+    font-size: 2rem;
+  }
+  button {
+    width: 60px;
+    height: 60px;
+    margin: 0.2rem;
+    font-size: 1.4rem;
+  }
+  #multiply,
+  #divide,
+  #minus,
+  #plus {
+    font-size: 1.4rem;
+  }
+  #equal {
+    font-size: 1.4rem;
+    width: 130px;
+  }
 }

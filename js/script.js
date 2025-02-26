@@ -1,18 +1,18 @@
-let allButtons = document.querySelectorAll(".all_buttons");
+let allButtons = document.querySelectorAll(".all-buttons");
 
 let outputRes = document.getElementById("output");
 
 let bodyTheme = document.body;
 
-let buttonTheme = document.getElementById("mode_icon");
+let buttonTheme = document.getElementById("mode-icon");
 
-// dark or light mode functionality
+// Dark Or Light Mode Functionality
 
 buttonTheme.addEventListener("click", () => {
   bodyTheme.classList.toggle("theme");
 });
 
-//main calculator functionality
+//Main Calculator Functionality
 
 allButtons.forEach((currElem) => {
   const calculatorFunc = (e) => {
@@ -39,6 +39,8 @@ allButtons.forEach((currElem) => {
       }
     }
   };
+
+  // Calculator Click
 
   currElem.addEventListener("click", calculatorFunc);
 });
